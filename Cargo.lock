@@ -1673,10 +1673,12 @@ dependencies = [
  "aiken",
  "aiken-lang",
  "aiken-project",
+ "async-trait",
  "blockfrost-http-client",
  "cardano-multiplatform-lib",
  "naumachia",
  "serde_json",
+ "tokio",
 ]
 
 [[package]]
