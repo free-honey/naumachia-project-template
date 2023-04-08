@@ -1,0 +1,38 @@
+[package]
+name = "naumachia-project-template"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+async-trait = "0.1.57"
+naumachia = {version = "0.2.0"}
+serde_json = "1.0"
+tokio = { version = "1.20.1", features = ["full"] }
+
+[build-dependencies]
+aiken = "0.0.29"
+aiken-project = "0.0.29"
+aiken-lang = "0.0.29"
+
+[patch.crates-io]
+naumachia = { version = "0.2.0", git = "https://github.com/free-honey/naumachia.git", branch = "master"}
+uplc = { version = "0.0.29", git = "https://github.com/aiken-lang/aiken.git", branch = "main"}
+aiken = { version = "0.0.29", git = "https://github.com/aiken-lang/aiken.git", branch = "main"}
+aiken-lang = { version = "0.0.29", git = "https://github.com/aiken-lang/aiken.git", branch = "main"}
+aiken-project = { version = "0.0.29", git = "https://github.com/aiken-lang/aiken.git", branch = "main"}
+pallas-addresses = { version = "0.18.0", git = "https://github.com/txpipe/pallas.git"}
+pallas-crypto = { version = "0.18.0", git = "https://github.com/txpipe/pallas.git"}
+
+[dependencies.blockfrost-http-client]
+version = "0.0.11"
+git = "https://github.com/MitchTurner/blockfrost-http-client.git"
+rev = "c32ef258ede02ed0c05ee8eef32a11a70770c361"
+
+[dependencies.cardano-multiplatform-lib]
+version = "3.1.1"
+git = "https://github.com/dcSpark/cardano-multiplatform-lib.git"
+rev = "685354495562ff879101fd023eb89555db9bbb1e"
+
