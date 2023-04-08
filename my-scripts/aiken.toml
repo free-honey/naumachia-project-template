@@ -1,0 +1,14 @@
+name = "foobar/my-scripts"
+version = "0.0.0"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'foobar/my-scripts'"
+
+[repository]
+user = "foobar"
+project = "my-scripts"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "main"
+source = "github"
